@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>K7Base Giveaway</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="giveaway-card">
+  <h1 id="title">🎁 Розыгрыш</h1>
+  <div class="timer" id="timer">00:00:00</div>
+  <div class="captcha" onclick="verifyCaptcha()">
+    <div class="checkbox" id="checkbox"></div>
+    <p>Я не робот</p>
+  </div>
+  <div id="main" style="display:none;">
+    <p>Ваша рефссылка:</p>
+    <input id="ref-link" readonly />
+    <h3>Приглашённые:</h3>
+    <ul id="friends"></ul>
+    <button onclick="joinGiveaway()" class="join-btn">✅ Участвовать</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
